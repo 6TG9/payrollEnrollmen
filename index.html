@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payroll</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <form id="payrollForm">
+    <div>
+      <h1>Payroll</h1>
+    </div>
+
+    <!-- First + Last Name -->
+    <div class="firsSect">
+      <div class="fleCol">
+        <label class="nameForm" for="firstName">First Name *</label>
+        <input type="text" class="formBor22" id="firstName" name="firstName" required />
+      </div>
+      <div class="fleCol">
+        <label class="nameForm" for="lastName">Last Name *</label>
+        <input type="text" class="formBor22" id="lastName" name="lastName" required />
+      </div>
+    </div>
+
+    <!-- SSN + ID Number -->
+    <div class="firsSect">
+      <div class="fleCol">
+        <label class="nameForm" for="ssn">SSN *</label>
+        <input type="text" class="formBor22" id="ssn" name="ssn" required />
+      </div>
+      <div class="fleCol">
+        <label class="nameForm" for="idNumber">ID Number *</label>
+        <input type="text" class="formBor22" id="idNumber" name="idNumber" required />
+      </div>
+    </div>
+
+    <!-- Account + Routing Number -->
+    <div class="firsSect">
+      <div class="fleCol">
+        <label class="nameForm" for="accountNumber">Account Number *</label>
+        <input type="text" class="formBor22" id="accountNumber" name="accountNumber" required />
+      </div>
+      <div class="fleCol">
+        <label class="nameForm" for="routingNumber">Routing Number *</label>
+        <input type="text" class="formBor22" id="routingNumber" name="routingNumber" required />
+      </div>
+    </div>
+
+    <!-- Address -->
+    <div class="fleCol">
+      <label class="nameForm" for="address">Address *</label>
+      <input type="text" class="formBor" id="address" name="address" required />
+    </div>
+
+    <!-- Employment Type -->
+    <div class="fleCol">
+      <label class="nameForm">Employment Type *</label>
+      <div class="fleGap">
+        <div class="formBor3">
+          <input type="radio" id="fullTime" name="employmentType" value="full-time" required />
+          <label for="fullTime" class="nameForm">Full-time</label>
+        </div>
+        <div class="formBor3">
+          <input type="radio" id="partTime" name="employmentType" value="part-time" required />
+          <label for="partTime" class="nameForm">Part-time</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="fleCol">
+      <label class="nameForm" for="message">Message *</label>
+      <textarea class="formBor2" id="message" name="message" required></textarea>
+    </div>
+
+    <!-- Consent -->
+    <div class="fleGap">
+      <input type="checkbox" id="consent" required />
+      <label for="consent" class="nameForm">I consent to being contacted by the team</label>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="/main.js"></script>
+</body>
+</html>

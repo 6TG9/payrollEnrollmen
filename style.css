@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:  hsl(148, 38%, 91%);
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    font-family: "Karla", sans-serif;
+    align-items: center;   
+}
+
+
+form {
+    /* border: solid 1px red; */
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; 
+    background-color: hsl(0, 0%, 100%); 
+    margin: auto; 
+    width: 400px; 
+}
+
+@media (max-width:355px) {
+    form {
+        max-width: 355px;
+        margin: auto;
+    }
+}
+
+h1 {
+    font-size: 16px;
+    color: hsl(187, 24%, 22%);
+    font-weight: 700;
+}
+
+@media (max-width:355px) {
+    h1 {
+        font-size: 32px;
+        color: hsl(187, 24%, 22%);
+    }
+}
+
+.firsSect {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width:355px) {
+    .firsSect {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+
+.fleCol {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nameForm {
+    font-size: 10px;
+    color: hsl(187, 24%, 22%);
+    font-weight: 400;
+}
+
+.formBor22 {
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 4px; 
+    width: 190px;
+}
+
+@media (max-width:355px) {
+    .formBor22 {
+        height: 35px;
+        width: 250px;
+    }
+}
+
+.formBor {
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 4px;  
+}
+
+.formBor3 {
+    border: 1px solid hsl(186, 15%, 59%);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 4px;
+    width: 200px; 
+    height: 2px;  
+}
+
+.formBor2{
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 4px; 
+    height: 60px; 
+}
+.fleGap {
+    display: flex; 
+    gap: 10px;
+}
+
+button{
+    border: 1px solid;
+    margin: auto;
+    border-radius: 4px; 
+    width: 390px;
+    background-color:  hsl(169, 82%, 27%);
+    color: white;
+    font-size: 10px;
+    height: 30px;
+}
+
