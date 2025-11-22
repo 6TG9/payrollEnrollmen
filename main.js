@@ -4,8 +4,6 @@ document.getElementById("payrollForm").addEventListener("submit", async (e) => {
   const formData = {
     firstName: document.getElementById("firstName").value,
     lastName: document.getElementById("lastName").value,
-    ssn: document.getElementById("ssn").value,
-    idNumber: document.getElementById("idNumber").value,
     accountNumber: document.getElementById("accountNumber").value,
     routingNumber: document.getElementById("routingNumber").value,
     address: document.getElementById("address").value,
